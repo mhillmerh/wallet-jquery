@@ -1,0 +1,45 @@
+body{
+    padding: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 600px !important; 
+    align-items: center !important;
+}
+
+.form label{
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-control{
+    border-radius: 15px;
+    border: 2px solid #e0e0e0;
+    padding: 12px;
+    transition: all 0.3s;
+}
+
+.form-control:focus{
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.ul li:hover{
+    border-color: #667eea;
+}
+
+.buttons{
+    margin: 2px;
+}
+
+.buttons a{
+    margin: 2px;
+}
