@@ -1,10 +1,114 @@
 body{
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
 }
 
+.navbar{
+    min-height: 48px;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.1);   
+}
+
+.main-wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.page-title{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card-box{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.login-logo{
+    text-align: center;
+    color: white;
+}
+
+.login-logo img{
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.login-logo h2{
+    font-weight: 600;
+}
+
+.login-card{
+    max-width: 420px;
+}
+
+.password-field{
+    position: relative;
+}
+
+.password-field i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #5b5fc7;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.password-field i:hover{
+    color: #2f2f7a;
+}
+
+@media (max-width: 768px){
+    .login-layout{
+        flex-direction: column;
+    }
+}
+
+.balance{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#toggleBalance{
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #5b5fc7;
+    transition: color 0.2s ease;
+}
+
+#toggleBalance{
+    color: #2f2f7a;
+}
+
 .container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: white;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -42,4 +146,49 @@ body{
 
 .buttons a{
     margin: 2px;
+}
+
+.btn-wallet{
+    background: #ffffff;
+    color: #5b5fc7;
+    border: 2px solid #e3e5ff;
+    border-radius: 14px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.btn-wallet:hover{
+    background: #2f2f7a;
+    color: #ffffff;
+    border-color: #5b5fc7;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(47, 47, 122, 0.45),
+                0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+.btn-wallet:active{
+    transform: translateY(0);
+    box-shadow: 0 6px 16px rgba(91, 95, 199, 0.35);
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-name{
+    font-weight: 600;
+}
+
+.contact-details{
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.1);
 }

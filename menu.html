@@ -4,29 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Wallet - Menu</title>
 </head>
 <body>
     <header>
-
+        <nav class="navbar navbar-expand">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/logo.png" alt="Logo" height="30" class="me-2">
+                    <span>Wallet Digital</span>
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item" href="#" id="btnDepositNav">Depositar</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" id="btnSendNav">Enviar Dinero</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" id="btnTransactionsNav">Últimos Movimientos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-danger" href="#" id="btnLogout">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>       
+        </nav>
     </header>
-    <div class="container">
-        <h2>Menú Principal</h2>
-        <div class="form-group">
-            <label for="balance">Dinero en cuenta:</label>
-            <h3>$60.000</h3>
+    <main class="main-wrapper">
+        <h2 class="page-title">Tu Cuenta Digital</h2>
+        <div class="card-box">
+            <p class="mb-1">Dinero en la cuenta:</p>
+            <h3 class="balance">
+                <span id="balance-value">$0</span>
+                <i id="toggleBalance" class="bi bi-eye"></i>
+            </h3>
         </div>
         <div class="buttons">
-            <a class="btn btn-primary" href="deposit.html">Depositar</a>
-            <a class="btn btn-primary" href="sendmoney.html">Enviar Dinero</a>
-            <a class="btn btn-primary" href="transactions.html">Últimos Movimientos</a>
+            <a id="btnDeposit" class="btn btn-wallet" >Depositar</a>
+            <a id="btnSend" class="btn btn-wallet" >Enviar Dinero</a>
+            <a id="btnTransactions" class="btn btn-wallet" >Últimos Movimientos</a>
         </div>
-    </div>
+    </main>   
     
     <footer>
-
+        &copy; Wallet Digital. Todos los derechos reservados. Diseñado por M.Hillmer.
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/auth-guard.js"></script>
+
 </body>
 </html>
