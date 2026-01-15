@@ -52,7 +52,7 @@ Este proyecto fue desarrollado como práctica de fundamentos de desarrollo front
 ---
 
 ## 📁 Estructura del proyecto
-
+```
 📦 wallet-digital
 ├── 📁 css
 │ └── styles.css
@@ -70,7 +70,7 @@ Este proyecto fue desarrollado como práctica de fundamentos de desarrollo front
 ├── sendmoney.html # Envío de dinero
 ├── transactions.html # Últimos movimientos
 └── README.md
-
+```
 ---
 
 ## 💾 Persistencia de datos
