@@ -61,18 +61,19 @@ Este proyecto fue desarrollado como práctica de fundamentos de desarrollo front
 │ ├── logo.png
 │ 
 ├── 📁 js
-│ ├── app.js # Lógica general (saldo, menú)
-│ ├── auth.js # Usuarios y login
-│ ├── auth-guard.js # Protección de rutas
-│ ├── deposit.js # Depósitos y retiros
-│ ├── sendmoney.js # Envío de dinero y contactos
-│ ├── transactions.js # Listado y filtros de movimientos
-│ └── utils.js # Funciones reutilizables (transacciones)
-├── index.html # Login
-├── menu.html # Menú principal
-├── deposit.html # Depósitos y retiros
-├── sendmoney.html # Envío de dinero
-├── transactions.html # Últimos movimientos
+│ ├── app.js                # Lógica general (saldos)
+│ ├── auth.js               # Usuarios y login
+│ ├── auth-guard.js         # Protección de rutas
+│ ├── deposit.js            # Depósitos y retiros
+│ ├── menu.js               # Lógica del menú principal
+│ ├── sendmoney.js          # Envío de dinero y contactos
+│ ├── transactions.js       # Listado y filtros de movimientos
+│ 
+├── index.html              # Login
+├── menu.html               # Menú principal
+├── deposit.html            # Depósitos y retiros
+├── sendmoney.html          # Envío y retiro de dinero
+├── transactions.html       # Últimos movimientos
 └── README.md
 ```
 ---
